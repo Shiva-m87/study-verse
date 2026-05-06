@@ -26,6 +26,7 @@ pipeline {
                     publishers: [
                         sshPublisherDesc(
                             configName: 'ec2',
+                            failOnError: false,
                             transfers: [
                                 sshTransfer(
                                     sourceFiles: 'study-verse.tar',
