@@ -45,6 +45,7 @@ pipeline {
                     publishers: [
                         sshPublisherDesc(
                             configName: 'ec2',
+                            failOnError: false,
                             transfers: [
                                 sshTransfer(
                                     execCommand: 'docker rm -f study-verse-container; docker load -i /home/ubuntu/study-verse.tar; docker run -d -p 80:80 --name study-verse-container study-verse'
