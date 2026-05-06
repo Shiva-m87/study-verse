@@ -896,7 +896,7 @@ export default function StudyPlanner() {
           <div className="sidebar">
             <div className="logo">
               <Flame size={32} />
-              StudyFlow
+              StudyVerse
             </div>
             <nav>
               <div className={`nav-item ${activeTab === 'dashboard' ? 'active' : ''}`} onClick={() => setActiveTab('dashboard')}>
