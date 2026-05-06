@@ -10,7 +10,9 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t study-verse .'
+                retry(3) {
+                    bat 'docker build --network=host -t study-verse .'
+                }
             }
         }
 
