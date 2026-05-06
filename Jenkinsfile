@@ -60,7 +60,7 @@ pipeline {
 
         stage('Health Check') {
             steps {
-                bat 'curl http://32.194.90.209:80'
+                bat 'curl http://54.242.169.153'
             }
         }
     }
